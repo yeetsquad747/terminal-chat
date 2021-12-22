@@ -1,11 +1,11 @@
-import chalk from "chalk";
-import readline from "readline";
+const chalk =  require("chalk");
+const readline = require("readline");
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
 
-import io from "socket.io-client";
+const { io } = require("socket.io-client");
 console.clear();
 
 let server_url = "";
